@@ -1,0 +1,188 @@
+/* MENÚ DE NAVEGACIÓN PRINCIPAL */
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #ffffff;
+}
+header {
+    width: 100%;
+	position: fixed;
+}
+.nav-bar {
+    margin: auto;
+    background: #13315e;
+}
+.nav-bar ul {
+    list-style: none;
+}
+.nav-menu > li {
+    position: relative;
+    display: inline-block;
+}
+.nav-menu > li > a {
+    display: block;
+    padding: 15px;
+    color: #ffffff;
+    font-family: 'Open Sans';
+    text-decoration: none;
+    cursor: default;
+    font-size: 18px;
+}
+.nav-menu li a:hover{
+    color: #e09350;
+    transition: all 0.3s;
+}
+/* SUBMENÚS */
+.nav-submenu {
+    position: absolute;
+    background: #13315e;
+    width: 110%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.nav-submenu li a{
+    display: block;
+    padding: 10px;
+    color:#ffffff;
+    font-family: 'Open Sans';
+    text-decoration: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+.nav-menu li:hover .nav-submenu {
+    visibility: visible;
+    opacity: 1;
+}
+/* CONTENIDO PRINCIPAL */
+.main-content {
+    padding-top: 55px;
+    width: 70%;
+    margin: auto;
+    overflow: hidden;
+    color: #000000;
+    padding-bottom: 10px;
+}
+h1 {
+    font-size: 50px;
+}
+h2 {
+    font-size: 26px;
+}
+h3 {
+    font-size: 22px;
+}
+h1, h2, h3 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+/* INDEX */
+.img-pc_gamer {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+/* PROCESADOR */
+.img-cpu {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.img-core_i_cpu {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.img-ryzen_cpu {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.th-amd:hover {
+    background-color: #d34e3c;
+    transition: all 0.3s;
+    color: #ffffff;
+}
+.th-intel:hover {
+    background-color: #327bcf;
+    transition: all 0.3s;
+    color: #ffffff;
+}
+td {
+    height: 30px;
+    text-align: center;
+}
+table, th, td {
+    border: 1px solid black;
+    font-size: 18px;
+
+}
+/* FOOTER */
+footer {
+    background: #13315e;
+    color: #ffffff;
+    width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.footer-body {
+    display: flex;
+    justify-content: center;
+}
+.footer-contact-section h1 {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    font-size: 24px;
+}
+.footer-contact {
+    display: inline-block;
+    justify-content: center;
+    width: 30%;
+}
+.footer-contact a {
+    margin-right: 70px;
+    color: #C7C7C7;
+}
+.bottom-footer {
+    width: 100%;
+    margin-top: 100px;
+    background: #0a1b35;
+}
+.footer-img {
+    width: 36px;
+    height: 36px;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+}
+.bottom-footer-bar {
+    margin-top: 40px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15px;
+}
+/* Responsive */
+@media screen and (max-width: 1100px) {
+    .footer-contact {
+        flex-wrap: wrap;
+        width: 100%;
+        margin-top: 40px;
+    }
+}
